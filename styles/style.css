@@ -30,8 +30,8 @@
   border-block-start: 1px solid var(--menu-color, #ff0070);
   block-size: 25px;
   inline-size: 25px;
-  inset-inline-end: 10px;
-  inset-block-start: 10px;
+  inset-inline-end: 8px;
+  inset-block-start: 20px;
 }
 
 .decorated-zone::after {
@@ -52,16 +52,15 @@
   align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
-  inset-block-start: 10px;
-  inset-inline-end: 18px;
+  inset-inline-end: 36px;
+  inset-block-start: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .header__bulb::after {
   content:'';
-  position: absolute;
-  top: 50%;
   display: var(--display-rec);
-  margin: -5px -20px 0 0;
   border-radius: 50%;
   fill: #ff0070;
   background-color: var(--accent-color, #ff0070);
@@ -115,9 +114,9 @@
 }
 
 .header__text {
-  max-inline-size: 364px;
-  align-self: start;
   position: relative;
+  align-self: start;
+  max-inline-size: 364px;
 }
 
 .main {
@@ -211,7 +210,6 @@
     position: relative;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     inset-inline-start: calc(-1* 10px);
-    margin-block-start: -178px;
   }
 
   .main__section {
@@ -291,14 +289,28 @@
   }
 
   .header__text {
-    margin-block-start: 90px;
+    margin-block-start: 114px;
     max-inline-size: 491px;
-    margin-inline-start: 60px;
+    margin-inline-end: 10px;
+  }
+
+  .header__bulb {
+    inset-inline-end: 30px;
+    inset-block-start: 21px;
+  }
+
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
   }
 
   .main {
     gap: 12px;
-    margin-block-start: -218px;
     margin-inline-start: 10px;
   }
 
@@ -312,8 +324,8 @@
   }
 
   .five__tips {
-    margin-block-start: 68px;
     row-gap: 20px;
+    margin-block-start: 68px;
   }
 
   .decrease__in__concentration .main__section-content {
@@ -337,12 +349,11 @@
   }
 
   .footer {
-    block-size: min(100vw, 768px);
-    margin-block-start: -110px;
+    block-size: 100dvb;
   }
 }
 
-@supports (block-size: 100dvb;) {
+@supports (block-size: 100dvb) {
   .header {
     block-size: 100dvb;
   }
