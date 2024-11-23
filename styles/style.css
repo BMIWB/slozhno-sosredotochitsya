@@ -50,7 +50,6 @@
   position: absolute;
   display: flex;
   align-items: center;
-  align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
   inset-inline-end: 36px;
@@ -358,6 +357,7 @@
 
   .footer {
     block-size: 100dvb;
+    max-height: 668px;
   }
 
   .footer .decor-text {
