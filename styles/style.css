@@ -357,7 +357,7 @@
 
   .footer {
     block-size: 100dvb;
-    max-height: 668px;
+    min-block-size: 1024px;
   }
 
   .footer .decor-text {
