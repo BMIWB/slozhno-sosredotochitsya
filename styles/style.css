@@ -48,6 +48,7 @@
 
 .header__bulb {
   position: absolute;
+  visibility: var(--display-rec);
   display: flex;
   align-items: center;
   gap: 10px;
@@ -211,8 +212,8 @@
   }
 
   .footer .decor-text {
-    padding-block-start: 46px;
     padding-inline-start: 40px;
+    padding-block-start: 46px;
   }
   .main__section {
     grid-template-columns: 236px 1fr 1fr;
@@ -268,14 +269,18 @@
 
     .main {
       gap: 80px;
-      margin-block-start: 20px;
       margin-inline-start: 10px;
       margin-inline-end: 10px;
+      margin-block-start: 20px;
     }
 
     .header__text {
-      margin-block-start: 164px;
       margin-inline-end: 10px;
+      margin-block-start: 164px;
+    }
+
+    .footer {
+      block-size: 100dvb;
     }
   }
  
@@ -357,12 +362,11 @@
 
   .footer {
     block-size: 100dvb;
-    min-block-size: 1024px;
   }
 
   .footer .decor-text {
-    padding-block-start: 124px;
     padding-inline-start: 40px;
+    padding-block-start: 124px;
   }
 }
 
