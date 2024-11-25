@@ -48,8 +48,7 @@
 
 .header__bulb {
   position: absolute;
-  visibility: var(--display-rec);
-  display: flex;
+  display: var(--display-rec);
   align-items: center;
   gap: 10px;
   color: var(--accent-color, #ff0070);
