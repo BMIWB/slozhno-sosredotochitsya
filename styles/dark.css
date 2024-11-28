@@ -11,4 +11,5 @@
   --background-color: #000028;
   --display-rec: flex;
   --cover-image: url(../images/cover-image-dark.png);
+  --hover-color: rgb(255, 0, 112, 0.4);
 }
